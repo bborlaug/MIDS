@@ -1,6 +1,5 @@
-# MIDS
-Code from UC-Berkeley MIDS program; 
-W205 - Exercise 1
+# W205 - Exercise 1
+Code from UC-Berkeley MIDS program
 
 Project Description:
 
