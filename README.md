@@ -1,5 +1,5 @@
 # W205 - Exercise 1
-Code from UC-Berkeley MIDS program
+**Code from UC-Berkeley MIDS program
 
 Project Description:
 
