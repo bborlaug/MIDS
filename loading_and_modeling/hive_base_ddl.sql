@@ -17,4 +17,4 @@ WITH SERDEPROPERTIES(
 "escapeChar"='\\'
 )
 STORED AS TEXTFILE
-LOCATION /user/w205/hospital_compare;
+LOCATION "/user/w205/hospital_compare";
