@@ -1,5 +1,5 @@
 DROP TABLE hospitals;
-CREATE EXTERNAL TABLE hospitals(pid, VARCHAR(8), 
+CREATE EXTERNAL TABLE hospitals(pid VARCHAR(8), 
                                 hospital_name VARCHAR(52), 
                                 address VARCHAR(52), 
                                 city VARCHAR(22), 
