@@ -20,7 +20,7 @@ WITH SERDEPROPERTIES(
 "escapeChar"='\\'
 )
 STORED AS TEXTFILE
-LOCATION "/user/w205/hospital_compare";
+LOCATION "/user/w205/hospital_compare/hospitals.csv";
 
 DROP TABLE effective_care;
 CREATE EXTERNAL TABLE effective_care(pid VARCHAR(8), 
@@ -47,7 +47,7 @@ WITH SERDEPROPERTIES(
 "escapeChar"='\\'
 )
 STORED AS TEXTFILE
-LOCATION "/user/w205/hospital_compare";
+LOCATION "/user/w205/hospital_compare/effective_care.csv";
 
 DROP TABLE readmissions;
 CREATE EXTERNAL TABLE readmissions(pid VARCHAR(8), 
@@ -76,7 +76,7 @@ WITH SERDEPROPERTIES(
 "escapeChar"='\\'
 )
 STORED AS TEXTFILE
-LOCATION "/user/w205/hospital_compare";
+LOCATION "/user/w205/hospital_compare/readmissions.csv";
 
 DROP TABLE measures;
 CREATE EXTERNAL TABLE measures(measure_name VARCHAR(159), 
@@ -93,7 +93,7 @@ WITH SERDEPROPERTIES(
 "escapeChar"='\\'
 )
 STORED AS TEXTFILE
-LOCATION "/user/w205/hospital_compare";
+LOCATION "/user/w205/hospital_compare/measures.csv";
 
 DROP TABLE survey_responses;
 CREATE EXTERNAL TABLE survey_responses(pid VARCHAR(8), 
@@ -137,7 +137,7 @@ WITH SERDEPROPERTIES(
 "escapeChar"='\\'
 )
 STORED AS TEXTFILE
-LOCATION "/user/w205/hospital_compare";
+LOCATION "/user/w205/hospital_compare/survey_responses.csv";
 
 DROP TABLE footnote_crosswalk;
 CREATE EXTERNAL TABLE footnote_crosswalk(fid VARCHAR(2), 
@@ -150,4 +150,4 @@ WITH SERDEPROPERTIES(
 "escapeChar"='\\'
 )
 STORED AS TEXTFILE
-LOCATION "/user/w205/hospital_compare";
+LOCATION "/user/w205/hospital_compare/footnote_crosswalk.csv";
