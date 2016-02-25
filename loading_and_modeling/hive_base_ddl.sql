@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS hospital_compare;
+USE hospital_compare;
 DROP TABLE hospitals;
 CREATE EXTERNAL TABLE hospitals(pid VARCHAR(8), 
                                 hospital_name VARCHAR(52), 
