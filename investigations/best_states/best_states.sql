@@ -1,0 +1,4 @@
+SELECT *
+FROM state_quality
+ORDER BY QS DESC
+LIMIT 10;
