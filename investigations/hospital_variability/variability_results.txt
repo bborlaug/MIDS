@@ -1,0 +1,13 @@
+The question asks, which procedures have the greatest variability between hospitals?  This is rather ambiguous so
+I will clarify that I am measuring the ailments that have the highest variances (between hospitals) in mortality
+rate.  Since the data only measures the death rates for 6 ailments (chronic obstructive pulmonary disease, coronary
+artery bypass graft surgery, heart attack, heart failure, pneumonia, and stroke), I will generate a "Top 6".  The results
+for the hospital_variability query are as follows:
+
+rank      mid        Ailment       Variance(mort_rate)
+ 1    MORT_30_PN    Pneumonia             2.93
+ 2    MORT_30_STK    Stroke               2.73
+ 3    MORT_30_HF   Heart Failure          2.04
+ 4    MORT_30_AMI  Heart Attack           1.56
+ 5   MORT_30_COPD     COPD                1.07
+ 6   MORT_30_CABG     CABG                0.65
