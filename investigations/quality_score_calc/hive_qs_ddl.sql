@@ -1,3 +1,5 @@
+USE hospital_compare;
+
 DROP TABLE quality_scores;
 CREATE EXTERNAL TABLE quality_scores(pid VARCHAR(8), 
                                      QC-T-ed_1b FLOAT, 
