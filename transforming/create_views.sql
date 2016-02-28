@@ -7,7 +7,7 @@ CREATE VIEW hospital_quality AS
 SELECT a.pid, a.hospital_name, a.city, a.state, b.QS
 FROM hospitals_tf a
 INNER JOIN quality_scores_tf b
-ON a.pid = b.pid
+ON a.pid = LPAD(b.pid, 6, "0")
 WHERE QS<>'';
   
 -- Create a view that aggregates hospital quality scores by their state & provides state summary statistics
