@@ -35,7 +35,7 @@ CREATE EXTERNAL TABLE quality_scores(pid VARCHAR(8),
 				     PD FLOAT, 
 				     PW FLOAT, 
                                      QS FLOAT,
-                                     state VARCHAR(2)
+                                     state VARCHAR(2))
 COMMENT 'Specific quality of care (QC), prevention of death (PD), and patient treatment - wellness (PW) measure scores that contribute to a specific hospitals quality score (QS)' 
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES(
