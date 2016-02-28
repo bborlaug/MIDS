@@ -1,16 +1,16 @@
-The following is a list of the top 10 hospitals according to quality score (described in /investigations/quality_score_calc):  
+The following is a list of the TOP 10 hospitals according to quality score (described in /investigations/quality_score_calc):  
   
 rank    pid             hospital_name                 city      state   QS (/100)  
-  1   440007    United Regional Medical Center     Manchester    TN      81.66
-  2   370215        Oklahoma Heart Hospital       Oklahoma City  OK      78.99
-  3   450884  East Texas Medical Center - Gilmer     Gilmer      TX      78.97
-  4   100313  Sacred Heart Hospital on the Gulf   Port Saint Joe FL      77.23
-  5   330182      St Francis Hospital, Roslyn        Roslyn      NY      76.66
-  6   420033    GHS Greer Memorial Hospital          Greer       SC      76.36
-  7   450604  Hill Country Memorial Hospital Inc  Fredericksburg TX      76.25
-  8   140145          St Josephs Hospital            Breese      IL      75.98
-  9   170109      Miami County Medical Center        Paola       KS      75.75
-  10  670025    The Heart Hospital Baylor Plano      Plano       TX      75.63
+  1   440007    United Regional Medical Center     Manchester    TN      81.67
+  2   030103          Mayo Clinic Hospital          Phoenix      AZ      80.61
+  3   370215        Oklahoma Heart Hospital       Oklahoma City  OK      78.99
+  4   450884  East Texas Medical Center - Gilmer     Gilmer      TX      78.97
+  5   420033    GHS Greer Memorial Hospital          Greer       SC      78.44
+  6   100313  Sacred Heart Hospital on the Gulf   Port Saint Joe FL      77.23
+  7   330182      St Francis Hospital, Roslyn        Roslyn      NY      76.71
+  8   010044    Marion Regional Medical Center      Hamilton     AL      76.32
+  9   450604  Hill Country Memorial Hospital Inc  Fredericksburg TX      76.27
+  10  170109      Miami County Medical Center        Paola       KS      75.75
   
   *Note: Var (from R) for QS values ~0.9.  
     
@@ -19,5 +19,19 @@ rank    pid             hospital_name                 city      state   QS (/100
   go into properly weighting each of these categories (by confidence, importance, etc.).  Future work should also go 
   into including hospitals in the rankings who did not have data for one or more sections of the study (~60% of hospitals
   are considered here).  
+    
+  And, just for fun, here are the 10 WORST hospitals according to quality score:  
+    
+rank   pid              hospital_name                   city      state   QS (/100)  
+2856  100260       St Lucie Medical Center        Port Saint Lucie  FL      20.47
+2855  290003  Sunrise Hospital and Medical Center     Las Vegas     NV      22.86
+2854  390123    Pottstown Memorial Medical Center     Pottstown     PA      23.13
+2853  050121        Adventist Medical Center          Hanford       CA      23.21
+2852  040041   St Marys Regional Medical Center     Russellville    AR      23.34
+2851  180132   Lake Cumberland Regional Hospital      Somerset      KY      23.37
+2850  490075    Danville Regional Medical Center      Danville      VA      24.10
+2849  190014     Teche Regional Medical Center      Morgan City     LA      24.37
+2848  440187      Livingston Regional Hospital       Livingston     TN      24.68
+2847  260070    Pemiscot County Memorial Hospital      Hayti        MO      24.69
   
   
