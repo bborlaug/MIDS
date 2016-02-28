@@ -44,3 +44,8 @@ WITH SERDEPROPERTIES(
 )
 STORED AS TEXTFILE
 LOCATION "/user/w205/hospital_compare/quality_scores";
+
+DROP TABLE quality_scores_tf;
+CREATE TABLE quality_scores_tf AS
+SELECT  pid, QC_T, QC_CP, QC_AD, QC, PD, PW, QS
+FROM quality_scores;
