@@ -12,7 +12,7 @@ rank    pid             hospital_name                 city      state   QS (/100
   9   450604  Hill Country Memorial Hospital Inc  Fredericksburg TX      76.27
   10  170109      Miami County Medical Center        Paola       KS      75.75
   
-  *Note: Var (from R) for QS values ~0.9.  
+  *Note: se (from R) for QS values ~0.18.  
     
   The list above accounts for each hospital's general quality, ability to prevent death, and patient survey 
   responses.  For this iteration of the study, each of these characteristics are weighted evenly.  Future work should 
