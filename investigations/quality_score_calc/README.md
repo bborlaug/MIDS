@@ -1,5 +1,4 @@
 CONTENTS:  
-  
 QS_description.txt -- File that briefly describes how QS scores were calculated  
 chosen_measures.csv -- Summary of mids chosen to calculate QS scores  
 R files -- Scripts used to generate the QS_table  
