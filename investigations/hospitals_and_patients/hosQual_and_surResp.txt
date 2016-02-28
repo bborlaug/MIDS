@@ -1,0 +1,30 @@
+The final question asked whether hospital quality was coorelated with the HCAHPS survey responses.  The measure that
+was used for hospital quality (quality score - QS) was derived in-part from survey responses so it would be obvious
+that the two are coorelated.  To answer this question, I must instead use a different measure of quality.  I decided to use the Quality Care
+(QC) score to represent hospital quality since I am certain it was scored independent of survey responses (HCAHPS_base).  In R,
+I plotted the survey scores against QC for each hospital to see if there was a linear relationship.  Here are the results:
+------------------------------------------------------------------
+lm(formula = qs$QC ~ qs$HCAHPS_base)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-13.0256  -2.1426   0.0281   2.1982  11.1196 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    22.365235   0.104626 213.764  < 2e-16 ***
+qs$HCAHPS_base -0.020399   0.003594  -5.676 1.51e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.21 on 2896 degrees of freedom
+  (1927 observations deleted due to missingness)
+Multiple R-squared:  0.011,	Adjusted R-squared:  0.01066 
+F-statistic: 32.22 on 1 and 2896 DF,  p-value: 1.511e-08
+-------------------------------------------------------------------
+For every increase of one point on the HCAHPS base survey (scored from 0-to-80), the hospitals QC score saw a decrease of 0.02
+(scored from 0-to-33.33).  While the p-value is significant, the effect size is so small that there appears to be no
+practically significant correlation between hospital quality and HCAHPS scores.  This is, of course, assuming that the
+method I employed for determining quality (the QC value) is sound.  This result suggests that I may have alotted too much
+weight to patient surveys in my hospital quality score (QS) calculations.  It looks like there is actually close to no correlation
+between survey scores and quality.
