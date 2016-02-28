@@ -14,6 +14,10 @@ rank    pid             hospital_name                 city      state   QS (/100
   
   *Note: Var (from R) for QS values ~0.9.  
     
-  The list above takes into accounts for each hospital's general quality, abilitiy to prevent death, and patient survey responses.  For this iteration of the study, each of these characteristics are weighted evenly.  Future work should go into properly weighting each of these categories (via confidence, importance, etc.).  Future work should also go into including hospitals in the rankings who did not have data for one or more sections of the study.  
+  The list above accounts for each hospital's general quality, ability to prevent death, and patient survey 
+  responses.  For this iteration of the study, each of these characteristics are weighted evenly.  Future work should 
+  go into properly weighting each of these categories (by confidence, importance, etc.).  Future work should also go 
+  into including hospitals in the rankings who did not have data for one or more sections of the study (~60% of hospitals
+  are considered here).  
   
   
