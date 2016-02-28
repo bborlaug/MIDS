@@ -1,0 +1,19 @@
+The following is a list of the top 10 hospitals according to quality score (described in /investigations/quality_score_calc):  
+  
+rank    pid             hospital_name                 city      state   QS (/100)  
+  1   440007    United Regional Medical Center     Manchester    TN      81.66
+  2   370215        Oklahoma Heart Hospital       Oklahoma City  OK      78.99
+  3   450884  East Texas Medical Center - Gilmer     Gilmer      TX      78.97
+  4   100313  Sacred Heart Hospital on the Gulf   Port Saint Joe FL      77.23
+  5   330182      St Francis Hospital, Roslyn        Roslyn      NY      76.66
+  6   420033    GHS Greer Memorial Hospital          Greer       SC      76.36
+  7   450604  Hill Country Memorial Hospital Inc  Fredericksburg TX      76.25
+  8   140145          St Josephs Hospital            Breese      IL      75.98
+  9   170109      Miami County Medical Center        Paola       KS      75.75
+  10  670025    The Heart Hospital Baylor Plano      Plano       TX      75.63
+  
+  *Note: Var (from R) for QS values ~0.9.  
+    
+  The list above takes into accounts for each hospital's general quality, abilitiy to prevent death, and patient survey responses.  For this iteration of the study, each of these characteristics are weighted evenly.  Future work should go into properly weighting each of these categories (via confidence, importance, etc.).  Future work should also go into including hospitals in the rankings who did not have data for one or more sections of the study.  
+  
+  
